@@ -4,6 +4,20 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.navbar a {
+  color: #fff;
+  margin: 20px 5%;
+  text-decoration: none;
+}
 .frontpage_masthead {
   width: 100%;
   height: 95vh;
@@ -31,20 +45,58 @@
   font-family: Ephesis, Helvetica, sans-serif;
 }
 
-.navbar {
+.subpage_masthead {
+  width: 100%;
+  height: 40vh;
+  background-image: url(../img/forrest_path.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  -webkit-box-shadow: 5px 5px 20px #222222;
+          box-shadow: 5px 5px 20px #222222;
+}
+.subpage_masthead .subpage_masthead_header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  height: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
-.navbar a {
+.subpage_masthead .subpage_masthead_header p {
+  position: relative;
+  top: 30%;
   color: #fff;
-  margin: 20px 5%;
-  text-decoration: none;
+  font-size: 55px;
+  font-family: Ephesis, Helvetica, sans-serif;
 }
+
+.wish_list_container {
+  border: 1px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 15px;
+}
+.wish_list_container .wish_list_header {
+  font-family: Ephesis, Helvetica, sans-serif;
+  font-size: 60px;
+}
+.wish_list_container .wish_list_subject {
+  font-family: Ephesis, Helvetica, sans-serif;
+  font-size: 40px;
+  margin-top: 25px;
+}
+.wish_list_container .wish_list_item p i {
+  color: #8f8f8f;
+  font-weight: 100;
+}
+
 @media screen and (min-width: 700px) {
   body {
     background-color: #999eee;

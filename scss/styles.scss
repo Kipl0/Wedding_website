@@ -4,6 +4,23 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    a {
+        color: #fff;
+        margin: 20px 5%;
+        text-decoration: none;       
+    }
+    &:hover {
+
+    }
+    .active_link {
+
+    }
+}
+
 .frontpage_masthead {
     width: 100%;
     height: 95vh;
@@ -28,19 +45,58 @@
     }
 }
 
-.navbar {
-    display: flex;
+.subpage_masthead {
     width: 100%;
-    justify-content: center;
-    a {
-        color: #fff;
-        margin: 20px 5%;
-        text-decoration: none;
-        
-    }
-    .active_link {
+    height: 40vh;
+    background-image: url(../img/forrest_path.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    box-shadow: 5px 5px 20px #222222;
 
+    //Vi skal giftes    
+    .subpage_masthead_header {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        p {
+            position: relative;
+            top: 30%;
+            color: #fff;
+            font-size: 55px;
+            font-family: Ephesis, Helvetica, sans-serif;
+        }
     }
+}
+
+
+
+.wish_list_container {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+    .wish_list_header {
+        font-family: Ephesis, Helvetica, sans-serif;
+        font-size: 60px;        
+    }
+
+    .wish_list_subject {
+        font-family: Ephesis, Helvetica, sans-serif;
+        font-size: 40px;
+        margin-top: 25px;
+    }
+
+    .wish_list_item {
+
+        p {
+
+                i {
+                    color: #8f8f8f;
+                    font-weight: 100;
+                }
+            }
+        }
 }
 
 @media screen and (min-width: 700px) {
