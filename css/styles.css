@@ -97,6 +97,24 @@
   font-weight: 100;
 }
 
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #6a9770;
+  height: 150px;
+  color: #fff;
+  font-size: 35px;
+  font-family: Ephesis, Helvetica, sans-serif;
+  margin-top: 50px;
+}
+
 @media screen and (min-width: 700px) {
   body {
     background-color: #999eee;
