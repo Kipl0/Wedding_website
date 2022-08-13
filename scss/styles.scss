@@ -72,23 +72,28 @@
 
 
 .wish_list_container {
-    border: 1px solid red;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     padding: 0 15px;
     .wish_list_header {
         font-family: Ephesis, Helvetica, sans-serif;
         font-size: 60px;        
+        display: flex;
+        justify-content: center;
     }
 
     .wish_list_subject {
         font-family: Ephesis, Helvetica, sans-serif;
         font-size: 40px;
         margin-top: 25px;
+        display: flex;
+        justify-content: center;
     }
 
     .wish_list_item {
-
+    display: flex;
+    justify-content: center;
         p {
 
             i {
@@ -114,21 +119,21 @@ footer {
 
 @media screen and (min-width: 700px) {
     body {
-        background-color: #999eee;
+        // background-color: #999eee;
     }
 }
 @media screen and (min-width: 950px) {
     body {
-        background-color: #f1bbff;
+        // background-color: #f1bbff;
     }
 }
 @media screen and (min-width: 1200px) {
     body {
-        background-color: #b8fff6;
+        // background-color: #b8fff6;
     }
 }
 @media screen and (min-width: 1600px) {
     body {
-        background-color: #ffd5d5;
+        // background-color: #ffd5d5;
     }
 }
