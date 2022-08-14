@@ -57,13 +57,21 @@
   font-family: Ephesis, Helvetica, sans-serif;
 }
 
+.practical_masthead_picture {
+  background-image: url(../img/Maja_Victor6.JPG);
+  background-position-x: center;
+}
+
+.wishlist_masthead_picture {
+  background-image: url(../img/Maja_Victor7.JPG);
+  background-position-x: 85%;
+}
+
 .subpage_masthead {
   width: 100%;
-  height: 40vh;
-  background-image: url(../img/forrest_path.jpg);
+  height: 80vh;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-x: center;
   -webkit-box-shadow: 5px 5px 20px #222222;
           box-shadow: 5px 5px 20px #222222;
 }
@@ -102,6 +110,8 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 0 15px;
+  width: 80%;
+  margin: 0 auto;
 }
 .wish_list_container .wish_list_header {
   font-family: Ephesis, Helvetica, sans-serif;
@@ -148,6 +158,7 @@
   font-family: Ephesis, Helvetica, sans-serif;
   font-size: 40px;
   font-weight: 400;
+  text-align: center;
 }
 .center_content_container p {
   text-align: center;
@@ -163,9 +174,37 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+  margin-bottom: 600px;
 }
-.slideshow_container img {
-  width: 80%;
+.slideshow_container .slide {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  opacity: 0.6;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+.slideshow_container .slide img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 600px;
+}
+.slideshow_container .showing {
+  z-index: 1;
+  -webkit-transform: none;
+          transform: none;
+  opacity: 1;
 }
 
 /*---------------------------
@@ -223,12 +262,17 @@ footer {
   .frontpage_masthead .frontpage_masthead_header p {
     font-size: 25px;
   }
+  .practical_masthead_picture {
+    background-position-y: 20%;
+  }
   /*----------------------------
       text - center - content
   ----------------------------*/
   .center_content_container {
     width: 60%;
-    border: 1px solid red;
+  }
+  .wish_list_container {
+    width: 60%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -245,6 +289,13 @@ footer {
   .frontpage_masthead .frontpage_masthead_header p {
     font-size: 25px;
   }
+  .practical_masthead_picture {
+    background-position-y: 60%;
+  }
+  .wishlist_masthead_picture {
+    background-position-x: center;
+    background-position-y: 50%;
+  }
   /*----------------------------
       text - center - content
   ----------------------------*/
@@ -260,6 +311,9 @@ footer {
   .frontpage_masthead .frontpage_masthead_header {
     padding-top: 6%;
     padding-left: 35%;
+  }
+  .practical_masthead_picture {
+    background-position-y: 50%;
   }
   /*----------------------------
       text - center - content

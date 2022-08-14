@@ -54,13 +54,19 @@
     }
 }
 
+.practical_masthead_picture {
+    background-image: url(../img/Maja_Victor6.JPG);  
+    background-position-x: center;  
+}
+.wishlist_masthead_picture {
+    background-image: url(../img/Maja_Victor7.JPG);  
+    background-position-x: 85%;
+}
 .subpage_masthead {
     width: 100%;
-    height: 40vh;
-    background-image: url(../img/forrest_path.jpg);
+    height: 80vh;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-x: center;
     box-shadow: 5px 5px 20px #222222;
 
     //Vi skal giftes    
@@ -88,6 +94,8 @@
     flex-direction: column;
     align-items: center;
     padding: 0 15px;
+    width: 80%;
+    margin: 0 auto;
     .wish_list_header {
         font-family: Ephesis, Helvetica, sans-serif;
         font-size: 60px;        
@@ -127,6 +135,7 @@
         font-family: Ephesis, Helvetica, sans-serif;
         font-size: 40px;        
         font-weight: 400;
+        text-align: center;
     }
     p {
         text-align: center;
@@ -139,9 +148,30 @@
 .slideshow_container {
     display: flex;
     justify-content: center;
-    img {
-        width: 80%;
+    position: relative;
+    margin-bottom: 600px;
+    .slide {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        opacity: 0.6;
+        transition: all 0.6s ease-in-out;
+        img {
+            width: 100%;
+            object-fit: cover;
+            height: 600px;
+        }
     }
+    .showing {
+        z-index: 1;
+        transform: none;
+        opacity: 1;
+    }
+
+
 }
 
 /*---------------------------
@@ -205,16 +235,17 @@ footer {
             }
         }       
     }
+    .practical_masthead_picture {
+        background-position-y: 20%;
+    }
     /*----------------------------
         text - center - content
     ----------------------------*/
     .center_content_container {
         width: 60%;
-        border: 1px solid red;
-        // h3 {
-        // }
-        // p {
-        // }
+    }
+    .wish_list_container {
+        width: 60%;
     }
 }
 
@@ -238,16 +269,20 @@ footer {
             }
         }       
     }
+    .practical_masthead_picture {
+        background-position-y: 60%;
+    }
+    .wishlist_masthead_picture {
+        background-position-x: center;
+        background-position-y: 50%;
+    }
     /*----------------------------
         text - center - content
     ----------------------------*/
     .center_content_container {
         width: 55%;
-        // h3 {
-        // }
-        // p {
-        // }
     }
+
 }
 @media screen and (min-width: 1450px) {
     body {
@@ -263,14 +298,13 @@ footer {
             padding-left: 35%;
         }
     }
+    .practical_masthead_picture {
+        background-position-y: 50%;
+    }
     /*----------------------------
         text - center - content
     ----------------------------*/
     .center_content_container {
         width: 40%;
-        // h3 {
-        // }
-        // p {
-        // }
     }
 }
