@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -21,10 +22,10 @@
 .frontpage_masthead {
   width: 100%;
   height: 95vh;
-  background-image: url(../img/forrest_path.jpg);
+  background-image: url(../img/Maja_Victor12.JPG);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-x: center;
+  background-position-x: 60%;
   -webkit-box-shadow: 5px 5px 20px #222222;
           box-shadow: 5px 5px 20px #222222;
 }
@@ -40,19 +41,19 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 30%;
+  padding-top: 5%;
 }
 .frontpage_masthead .frontpage_masthead_header h1 {
   position: relative;
   color: #fff;
-  font-size: 55px;
+  font-size: 35px;
   font-weight: 400;
   font-family: Ephesis, Helvetica, sans-serif;
 }
 .frontpage_masthead .frontpage_masthead_header p {
   position: relative;
   color: #fff;
-  font-size: 25px;
+  font-size: 18px;
   font-family: Ephesis, Helvetica, sans-serif;
 }
 
@@ -83,6 +84,9 @@
   font-family: Ephesis, Helvetica, sans-serif;
 }
 
+/* ---------------------------
+        Ønskeliste
+----------------------------*/
 .wish_list_container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -124,6 +128,9 @@
   font-weight: 100;
 }
 
+/*---------------------------
+        Slideshow index
+---------------------------*/
 .slideshow_container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -136,6 +143,9 @@
   width: 80%;
 }
 
+/*---------------------------
+            Footer
+---------------------------*/
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -155,15 +165,71 @@ footer {
 }
 
 @media screen and (min-width: 700px) {
+  .frontpage_masthead {
+    background-position-x: 35%;
+  }
   .frontpage_masthead .frontpage_masthead_header {
-    padding-top: 20%;
+    padding-top: 15%;
+  }
+  .frontpage_masthead .frontpage_masthead_header h1 {
+    font-size: 45px;
+  }
+  .frontpage_masthead .frontpage_masthead_header p {
+    font-size: 22px;
   }
   .navbar a {
     font-size: 20px;
   }
 }
 @media screen and (min-width: 950px) {
+  body {
+    background-color: #f1bbff;
+  }
+  .frontpage_masthead {
+    background-position-x: 20%;
+  }
   .frontpage_masthead .frontpage_masthead_header {
     padding-top: 15%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-left: 30%;
+  }
+  .frontpage_masthead .frontpage_masthead_header h1 {
+    font-size: 55px;
+  }
+  .frontpage_masthead .frontpage_masthead_header p {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body {
+    background-color: #b8fff6;
+  }
+  .frontpage_masthead {
+    background-position-x: 0%;
+    background-position-y: center;
+  }
+  .frontpage_masthead .frontpage_masthead_header {
+    padding-top: 8%;
+  }
+  .frontpage_masthead .frontpage_masthead_header h1 {
+    font-size: 55px;
+  }
+  .frontpage_masthead .frontpage_masthead_header p {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 1450px) {
+  body {
+    background-color: #ffd5d5;
+  }
+  .frontpage_masthead {
+    background-position-x: 0%;
+    background-position-y: center;
+  }
+  .frontpage_masthead .frontpage_masthead_header {
+    padding-top: 6%;
+    padding-left: 35%;
   }
 }
