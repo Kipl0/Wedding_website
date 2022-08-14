@@ -91,7 +91,7 @@
     .wish_list_header {
         font-family: Ephesis, Helvetica, sans-serif;
         font-size: 60px;        
-        display: flex;
+        font-weight: 400;
     }
 
     .wish_list_subject {
@@ -124,6 +124,9 @@
     margin: 0 auto;
     h3 {
         margin: 0 0 20px 0;
+        font-family: Ephesis, Helvetica, sans-serif;
+        font-size: 40px;        
+        font-weight: 400;
     }
     p {
         text-align: center;
@@ -183,7 +186,7 @@ footer {
 }
 @media screen and (min-width: 950px) {
     body {
-        background-color: #f1bbff;
+        // background-color: #f1bbff;
     }
     //Masthead index
     .frontpage_masthead {
@@ -218,7 +221,7 @@ footer {
 
 @media screen and (min-width: 1200px) {
     body {
-        background-color: #b8fff6;
+        // background-color: #b8fff6;
     }
     //Masthead index
     .frontpage_masthead {
@@ -240,7 +243,6 @@ footer {
     ----------------------------*/
     .center_content_container {
         width: 55%;
-        border: 1px solid red;
         // h3 {
         // }
         // p {
@@ -249,7 +251,7 @@ footer {
 }
 @media screen and (min-width: 1450px) {
     body {
-        background-color: #ffd5d5;
+        // background-color: #ffd5d5;
     }
     //Masthead index
     .frontpage_masthead {
@@ -266,7 +268,6 @@ footer {
     ----------------------------*/
     .center_content_container {
         width: 40%;
-        border: 1px solid red;
         // h3 {
         // }
         // p {
