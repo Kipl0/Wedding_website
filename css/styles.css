@@ -151,7 +151,7 @@
           flex-direction: column;
   padding: 40px 0;
   margin-bottom: 40px;
-  background-color: #e9dfdd;
+  background-color: rgba(190, 172, 180, 0.3960784314);
   color: #4b3b37;
   -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2666666667);
           box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2666666667);
@@ -266,7 +266,8 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #2B462F;
+  background-color: #181f19;
+  background-color: #1e3824;
   height: 150px;
   color: #fff;
   font-size: 35px;
