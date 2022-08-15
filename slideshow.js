@@ -23,4 +23,4 @@ const slide = () => {
 }
 slide();
 
-setInterval(slide, 5000);
+setInterval(slide, 4000);
