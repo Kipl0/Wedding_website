@@ -109,11 +109,10 @@
         }
     }
 }
-
 /*----------------------------
     text - center - content
 ----------------------------*/
-.center_color_content {
+.center_color_content, .center_color_img_content {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -135,6 +134,15 @@
         font-size: 40px;
         font-weight: 400;
         }
+    }  
+    h3 {
+        margin-bottom: 20px;
+        font-family: Ephesis, Helvetica, sans-serif;
+        font-size: 40px;
+        font-weight: 400;
+    }
+    img {
+    width: 80%;
     }
 }
 
