@@ -1,0 +1,30 @@
+/* ---------------------------
+        Ønskeliste
+----------------------------*/
+.wish_list_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+    width: 80%;
+    margin: 0 auto;
+
+    .wish_list_subject {
+        color: #4b3b37;
+        font-size: 30px;
+        margin-top: 25px;
+        display: flex;
+    }
+
+    .wish_list_item {
+        display: flex;
+        p {
+
+            i {
+                color: #8f8f8f;
+                font-weight: 100;
+            }
+        }
+    }
+}

@@ -1,0 +1,124 @@
+
+.frontpage_masthead {
+    width: 100%;
+    height: 95vh;
+    background-image: url(../img/Maja_Victor12.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 60%;
+    position: relative;
+    box-shadow: 5px 5px 20px #3b3b3b;
+    //Vi skal giftes    
+    .frontpage_masthead_header {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        padding-top: 12%;
+        color: #fff;
+        position: relative;
+        font-size: 22px;
+        h1 {
+            font-family: Ephesis, Helvetica, sans-serif;
+            font-weight: 400;   
+        }
+        p {
+            font-family: Ephesis, Helvetica, sans-serif;
+        }
+        
+    }
+}
+
+.practical_masthead_picture {
+    background-image: url(../img/Maja_Victor6.JPG);  
+    background-position-x: center;  
+}
+.wishlist_masthead_picture {
+    background-image: url(../img/Maja_Victor7.JPG);  
+    background-position-x: 85%;
+}
+.subpage_masthead {
+    width: 100%;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 5px 5px 20px #222222;
+}
+
+
+
+@media screen and (min-width: 700px) {
+    //Masthead index
+    .frontpage_masthead {
+        background-position-x: 35%;
+        //Vi skal giftes    
+        .frontpage_masthead_header {
+            padding-top: 17%;
+            h1 {
+                font-size: 55px;
+            }
+        }       
+    }
+
+}
+@media screen and (min-width: 950px) {
+    //Masthead index
+    .frontpage_masthead {
+        background-position-x: 20%;
+
+        //Vi skal giftes    
+        .frontpage_masthead_header {
+            padding-top: 15%;
+            align-items: flex-start;
+            padding-left: 30%;
+            h1 {
+                font-size: 65px;
+            }
+            p {
+                font-size: 25px;
+            }
+        }       
+    }
+    .practical_masthead_picture {
+        background-position-y: 20%;
+    }
+    .wish_list_container {
+        width: 60%;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    //Masthead index
+    .frontpage_masthead {
+        background-position-x: 0%;
+        background-position-y: center;
+        //Vi skal giftes    
+        .frontpage_masthead_header {
+            padding-top: 8%;
+        }       
+    }
+    .practical_masthead_picture {
+        background-position-y: 60%;
+    }
+    .wishlist_masthead_picture {
+        background-position-x: center;
+        background-position-y: 50%;
+    }
+
+}
+@media screen and (min-width: 1450px) {
+    //Masthead index
+    .frontpage_masthead {
+        background-position-x: 0%;
+        background-position-y: center;
+        //Vi skal giftes    
+        .frontpage_masthead_header {
+            padding-top: 6%;
+            padding-left: 35%;
+        }
+    }
+    .practical_masthead_picture {
+        background-position-y: 50%;
+    }
+}
