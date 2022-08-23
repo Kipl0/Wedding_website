@@ -164,6 +164,40 @@
           box-shadow: 5px 5px 20px #222222;
 }
 
+/*---------------------
+        Silver h1
+---------------------*/
+.shine {
+  font-size: 3em;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+.shine {
+  background: #161616 -webkit-gradient(linear, left top, right top, from(#161616), to(#161616), color-stop(0.5, rgb(255, 255, 255))) 0 0 no-repeat;
+  -webkit-background-size: 150px;
+  color: rgba(255, 255, 255, 0.15);
+  -webkit-background-clip: text;
+  -webkit-animation-name: shine;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  text-shadow: 0 0px 0px rgba(255, 255, 255, 0.582);
+}
+
+@-webkit-keyframes shine {
+  0% {
+    background-position: -125px;
+  }
+  50% {
+    background-position: 125%;
+  }
+  100% {
+    background-position: -125px;
+  }
+}
+/*---------------------
+        meedia queries
+---------------------*/
 @media screen and (min-width: 700px) {
   .frontpage_masthead {
     background-position-x: 35%;
@@ -233,19 +267,18 @@
 -----------------------------*/
 .slideshow_container {
   width: 100%;
-  padding: 70px 0;
-  background-color: rgba(216, 226, 211, 0.8);
+  padding: 10px 0;
+  background-color: rgba(218, 231, 187, 0.7137254902);
   -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
           box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .slideshow {
   max-width: 1100px;
-  margin: auto;
+  margin: 60px auto;
   -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
           box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
   border: white solid 5px;
-  margin-bottom: 40px;
   background-color: white;
 }
 
@@ -257,11 +290,17 @@
      object-fit: cover;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
+.panel-main {
+  bottom: 0;
 }
 
 .thumbs img:hover {
   cursor: pointer;
-  opacity: 0.3;
+  opacity: 0.3 !important;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -387,11 +426,95 @@
     width: 60%;
   }
 }
+/* JS manipulated styles */
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: inline-block;
+}
+
+/* Appearance Styles */
+.stavnsbo_slider {
+  margin: 0 0 40px 0;
+}
+.stavnsbo_slider .slides .slide {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+}
+.stavnsbo_slider .slides .img_bottom_position img {
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+.stavnsbo_slider .slides img {
+  width: 100%;
+  max-height: 650px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.stavnsbo_slider .button_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.stavnsbo_slider .button_container .prev, .stavnsbo_slider .button_container .next {
+  min-height: 25px;
+  min-width: 70px;
+  border: 0;
+  font-size: 50px;
+  padding: 0;
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+.stavnsbo_slider .button_container .prev:hover, .stavnsbo_slider .button_container .prev:hover, .stavnsbo_slider .button_container .next:hover, .stavnsbo_slider .button_container .next:hover {
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: #707070;
+  cursor: pointer;
+}
+.stavnsbo_slider .button_container p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 10px;
+  color: #707070;
+}
+
 * {
   padding: 0;
   margin: 0;
   font-family: "Source Sans Pro", "Times New Roman", "Arial", sans-serif;
   font-weight: 200;
+}
+
+/*---------------------------
+        Body color
+---------------------------*/
+.wish_list {
+  background-color: rgba(218, 231, 187, 0.7137254902);
 }
 
 /*---------------------------
@@ -407,7 +530,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgba(189, 206, 180, 0.8156862745);
+  background-color: #B6C4A0;
   height: 150px;
   color: #4b3b37;
   font-size: 30px;

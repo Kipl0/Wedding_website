@@ -47,6 +47,46 @@
 
 
 
+
+/*---------------------
+        Silver h1
+---------------------*/
+$duration: 5s;
+$text-color: rgba(255, 255, 255, 0.15);
+
+.shine {
+	font-size: 3em;
+	margin-bottom: 1em;
+	font-weight: bold;
+}
+
+.shine {
+	background: #161616 -webkit-gradient(linear, left top, right top, from(#161616), to(#161616), color-stop(0.5, rgb(255, 255, 255))) 0 0 no-repeat;
+	-webkit-background-size: 150px;
+	color: $text-color;
+	-webkit-background-clip: text;
+	-webkit-animation-name: shine;
+	-webkit-animation-duration: $duration;
+	-webkit-animation-iteration-count: infinite;
+	text-shadow: 0 0px 0px rgba(255, 255, 255, 0.582);
+}
+
+
+@-webkit-keyframes shine {
+	0% {
+		background-position: -125px;
+	}
+	50% {
+		background-position: 125%;
+	}
+	100% {
+		background-position: -125px;
+	}
+}
+
+/*---------------------
+        meedia queries
+---------------------*/
 @media screen and (min-width: 700px) {
     //Masthead index
     .frontpage_masthead {

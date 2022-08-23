@@ -3,6 +3,7 @@
 @import "slideshow";
 @import "navbar";
 @import "wishlist";
+@import "stavnsbo_slider";
 
 * {
     padding: 0;
@@ -12,7 +13,13 @@
 }   
  
 
-
+/*---------------------------
+        Body color
+---------------------------*/
+.wish_list {
+    // background-color: #d1ebc6b6;
+    background-color: #dae7bbb6;
+}
 /*---------------------------
             Footer
 ---------------------------*/
@@ -20,7 +27,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #bdceb4d0;
+    // background-color: #bdceb4d0;
+    background-color: #B6C4A0;
     height: 150px;
     color: #4b3b37;
     font-size: 30px;
