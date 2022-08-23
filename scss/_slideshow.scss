@@ -3,14 +3,16 @@
 -----------------------------*/
 .slideshow_container {
     width: 100%;
-    padding: 30px 0;
+    padding: 70px 0;
     background-color: #d8e2d3cc;
-    margin-bottom: 40px;
+    box-shadow: 5px 5px 15px #00000033;
 }
 .slideshow {
     max-width: 1100px;
     margin: auto;
+    box-shadow: 5px 5px 15px #00000033;
     border: white solid 5px;
+    margin-bottom: 40px;
     background-color: white;;
 }
 .panel-main img, .thumbs img {

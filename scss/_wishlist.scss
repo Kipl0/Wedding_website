@@ -6,25 +6,55 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 0 15px;
-    width: 80%;
-    margin: 0 auto;
-
+    width: 100%;
+    margin: 0 0 50px 0;
     .wish_list_subject {
         color: #4b3b37;
         font-size: 30px;
-        margin-top: 25px;
+        margin: 30px 0 15px 0;
         display: flex;
     }
 
     .wish_list_item {
         display: flex;
+        width: 85%;
+        min-height: 30px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
         p {
-
+            display: flex;
+            flex-direction: column;
             i {
                 color: #8f8f8f;
                 font-weight: 100;
             }
         }
     }
+}
+
+
+
+@media screen and (min-width: 700px) {
+
+}
+
+@media screen and (min-width: 950px) {
+    .wish_list_container {
+        .wish_list_subject {
+        }
+
+        .wish_list_item {
+            width: 60%;
+        }
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+
+}
+
+@media screen and (min-width: 1450px) {
+
 }

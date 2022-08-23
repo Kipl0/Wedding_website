@@ -3,15 +3,15 @@
     text - center - content
 ----------------------------*/
 
-.center_color_content, .center_color_img_content, .center_color_content_col {
+.center_color_content, .center_color_img_content {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 40px 0;
+    padding: 70px 0;
     margin-bottom: 50px;
     background-color: #e2d6d37c;
     color: #4b3b37;
-    box-shadow: 5px 5px 20px #00000044;
+    box-shadow: 5px 5px 15px #00000033;
     z-index: 1;
     div {
         width: 23%;
@@ -42,8 +42,7 @@
     flex-direction: column;
     align-items: center;
     width: 80%;
-    margin: 0 auto;
-    margin-bottom: 50px;
+    margin: 40px auto;
     h3 {
         margin: 0 0 20px 0;
         font-family: Ephesis, Helvetica, sans-serif;
@@ -57,9 +56,6 @@
     }
 }
 
-.center_color_content_col_div {
-    width: 40% ;
-}
 
 .fullsize_img {
     width: 100%;
