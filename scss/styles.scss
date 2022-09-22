@@ -17,7 +17,8 @@
         Body color
 ---------------------------*/
 .wish_list, .index_body {
-    background-color: #bfcab4;
+    // background-color: #bfcab4; //green
+    background-color: #f0e7e7;
 }
 
 /*---------------------------
@@ -27,7 +28,10 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #98a78b;
+    // background-color: #98a78b; //green
+    background-color: #d3b0aa;
+    background-image: linear-gradient(#d3b0aa, #aa8b85);
+
     height: 150px;
     color: #4b3b37;
     font-size: 30px;
