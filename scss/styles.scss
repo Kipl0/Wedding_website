@@ -16,10 +16,10 @@
 /*---------------------------
         Body color
 ---------------------------*/
-.wish_list {
-    // background-color: #d1ebc6b6;
-    background-color: #dae7bbb6;
+.wish_list, .index_body {
+    background-color: #bfcab4;
 }
+
 /*---------------------------
             Footer
 ---------------------------*/
@@ -27,8 +27,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    // background-color: #bdceb4d0;
-    background-color: #B6C4A0;
+    background-color: #98a78b;
     height: 150px;
     color: #4b3b37;
     font-size: 30px;
@@ -37,26 +36,3 @@ footer {
 }
 
 
-
-@media screen and (min-width: 700px) {
-    body {
-        // background-color: #999eee;
-    }
-}
-@media screen and (min-width: 950px) {
-    body {
-        // background-color: #f1bbff;
-    }
-}
-
-
-@media screen and (min-width: 1200px) {
-    body {
-        // background-color: #b8fff6;
-    }
-}
-@media screen and (min-width: 1450px) {
-    body {
-        // background-color: #ffd5d5;
-    }
-}

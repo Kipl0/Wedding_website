@@ -8,10 +8,9 @@
     align-items: center;
     flex-direction: column;
     padding: 70px 0;
-    margin-bottom: 50px;
     background-color: #e2d6d37c;
     color: #4b3b37;
-    box-shadow: 5px 5px 15px #00000033;
+    box-shadow: 5px 5px 40px #00000040;
     z-index: 1;
     div {
         width: 23%;
@@ -54,6 +53,28 @@
     p {
         text-align: center;
     }
+    b {
+        font-weight: 600;
+    }
+}
+
+.img_text_img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+    .img_container_left, .img_container_right {
+        display: flex;
+        width: 100%;
+        img {
+            width: 80%;
+            height:fit-content;
+        }
+    }
+    .img_container_right {
+        justify-content: flex-end;
+    }
 }
 
 
@@ -65,7 +86,32 @@
     margin-bottom: 30px;
 }
 
+//practical - dresscode img with text
+.dress_code_container {
+    display: flex;
+    flex-direction: column;
+    img {
+        width: 100%;
+        object-fit: cover;
 
+    }
+    div {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #bfcab4;
+        padding: 50px 0;
+        h2, p {
+            width: 80%;
+        }
+        h2 {
+            font-family: Ephesis, Helvetica, sans-serif;
+            font-size: 40px;
+        }
+    }
+}
 
 @media screen and (min-width: 700px) {
     .center_color_content {
@@ -78,6 +124,27 @@
 @media screen and (min-width: 950px) {
     .center_content_container {
         width: 60%;
+    }
+    .img_text_img {
+            flex-direction: row;
+        .img_container_left, .img_container_right {
+            display: flex;
+            width: 20%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    //practical - dresscode img with text
+    .dress_code_container {
+        flex-direction: row;
+        img {
+            width: 50%;
+        }
+        div {
+            width: 50%;
+            justify-content: center;
+        }
     }
 }
 
