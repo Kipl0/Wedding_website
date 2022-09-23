@@ -48,7 +48,6 @@ Pink under masthead (practical and wishlist)
   background-image: -webkit-gradient(linear, left top, left bottom, from(#dbcaca), to(#f0e7e7));
   background-image: linear-gradient(#dbcaca, #f0e7e7);
   color: #4b3b37;
-  margin-bottom: 50px;
   -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3137254902);
           box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3137254902);
   padding: 20px 0;
@@ -497,8 +496,59 @@ Pink under masthead (practical and wishlist)
   }
 }
 /* ---------------------------
-        Wish list
+        Wish list navbar
 ----------------------------*/
+.wish_list_subject_finder_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  background-color: #AACDD3;
+  background-color: #f0e7e7;
+  -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2509803922);
+          box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2509803922);
+  position: relative;
+}
+.wish_list_subject_finder_container .wish_list_subject_finder {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  min-width: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wish_list_subject_finder_container .wish_list_subject_finder:hover {
+  background-color: #dbcaca;
+  cursor: pointer;
+}
+.wish_list_subject_finder_container .wish_list_subject_finder h3 {
+  font-weight: 600;
+}
+
+/* scrolling state */
+.wish_list_subject_finder_container.fixed-top {
+  position: fixed;
+  top: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/*--------------------------
+    wish list container
+---------------------------*/
 .wish_list_container {
   width: 100%;
   display: -webkit-box;
@@ -508,7 +558,7 @@ Pink under masthead (practical and wishlist)
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 95%;
+  width: 98%;
   margin: 0 auto;
 }
 .wish_list_container .wish_list_subject_header {
@@ -516,6 +566,7 @@ Pink under masthead (practical and wishlist)
   font-size: 45px;
   font-family: Ephesis, Helvetica, sans-serif;
   margin: 0 0 30px 0;
+  color: #4b3b37;
 }
 .wish_list_container .wish_list_subject_container {
   display: -webkit-box;
@@ -530,8 +581,8 @@ Pink under masthead (practical and wishlist)
 .wish_list_container .wish_list_subject_container .card {
   width: 30%;
   padding: 20px;
-  min-width: 100px;
-  max-width: 150px;
+  min-width: 135px;
+  max-width: 190px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -551,29 +602,34 @@ Pink under masthead (practical and wishlist)
   padding: 10px 0;
   font-weight: 600;
   font-size: 18px;
+  text-align: center;
+}
+.wish_list_container .wish_list_subject_container .card p {
+  text-align: center;
 }
 .wish_list_container .wish_list_subject_container .card img {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-}
-.wish_list_container .wish_list_subject_container .card p {
-  padding: 15px 0;
+  margin-bottom: 5px;
+  height: 130px;
 }
 .wish_list_container .wish_list_subject_container .card button {
   width: 100%;
   height: 35px;
   border: none;
-  background-color: #bfcab4;
+  background-color: #b2c4a0;
   background-color: #AACDD3;
   border-radius: 10px;
   -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1882352941);
           box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1882352941);
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  margin-top: 15px;
 }
 .wish_list_container .wish_list_subject_container .card button:hover {
-  background-color: #98a78b;
+  background-color: #899c77;
+  background-color: #88B9C2;
   -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4392156863);
           box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4392156863);
   cursor: pointer;
@@ -592,8 +648,12 @@ Pink under masthead (practical and wishlist)
   }
   .wish_list_container .wish_list_subject_container .card {
     margin: 0 20px 50px 20px;
-    min-width: 200px;
+    min-width: 170px;
     max-width: 250px;
+  }
+  .wish_list_container .wish_list_subject_container .card img {
+    height: 180px;
+    margin-bottom: 15px;
   }
 }
 /* JS manipulated styles */
