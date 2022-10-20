@@ -534,8 +534,21 @@ Pink under masthead (practical and wishlist)
   background-color: #dbcaca;
   cursor: pointer;
 }
-.wish_list_subject_finder_container .wish_list_subject_finder h3 {
-  font-weight: 600;
+.wish_list_subject_finder_container .wish_list_subject_finder a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #4b3b37;
+  font-size: 18px;
 }
 
 /* scrolling state */
@@ -565,7 +578,16 @@ Pink under masthead (practical and wishlist)
   text-align: center;
   font-size: 45px;
   font-family: Ephesis, Helvetica, sans-serif;
-  margin: 0 0 30px 0;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #4b3b37;
 }
 .wish_list_container .wish_list_subject_container {
@@ -576,7 +598,6 @@ Pink under masthead (practical and wishlist)
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 40px;
 }
 .wish_list_container .wish_list_subject_container .card {
   width: 30%;
@@ -593,10 +614,27 @@ Pink under masthead (practical and wishlist)
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 5px 30px 5px;
+  margin: 30px 5px 0 5px;
   -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3137254902);
           box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3137254902);
   border-radius: 10px;
+}
+.wish_list_container .wish_list_subject_container .card .star_container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 20px;
+}
+.wish_list_container .wish_list_subject_container .card .star_container img {
+  width: 20px;
+  height: 20px;
+}
+.wish_list_container .wish_list_subject_container .card .star_container .no-show {
+  display: none;
 }
 .wish_list_container .wish_list_subject_container .card h4 {
   padding: 10px 0;
@@ -618,8 +656,7 @@ Pink under masthead (practical and wishlist)
   width: 100%;
   height: 35px;
   border: none;
-  background-color: #b2c4a0;
-  background-color: #AACDD3;
+  background-color: #b5cab4;
   border-radius: 10px;
   -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1882352941);
           box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1882352941);
@@ -628,8 +665,7 @@ Pink under masthead (practical and wishlist)
   margin-top: 15px;
 }
 .wish_list_container .wish_list_subject_container .card button:hover {
-  background-color: #899c77;
-  background-color: #88B9C2;
+  background-color: #86a184;
   -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4392156863);
           box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4392156863);
   cursor: pointer;
@@ -647,7 +683,7 @@ Pink under masthead (practical and wishlist)
     width: 85%;
   }
   .wish_list_container .wish_list_subject_container .card {
-    margin: 0 20px 50px 20px;
+    margin: 30px 20px 0 20px;
     min-width: 170px;
     max-width: 250px;
   }
@@ -740,6 +776,10 @@ Pink under masthead (practical and wishlist)
   margin: 0;
   font-family: "Source Sans Pro", "Times New Roman", "Arial", sans-serif;
   font-weight: 200;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /*---------------------------
