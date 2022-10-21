@@ -1,0 +1,112 @@
+.wedding-gallery-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  border: 1px solid blue;
+  margin-top: 50px;
+}
+
+#gallery {
+  width: 100%;
+  max-width: 1215.44px;
+  margin-left: auto;
+  margin-right: auto;
+  // padding-top: .4rem;
+  // padding-bottom: .4rem;
+}
+
+#gallery figure {
+  width: 96%;
+  border: 1px solid red;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+
+#gallery figure img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
+  box-shadow: 5px 5px 15px #202020;
+  // box-shadow: 3px 5px 8px #888888, 0px 5px 6px #888888, -3px 5px 8px #888888;
+}
+
+@media only screen and (min-width: 800px) {
+  #gallery figure {
+    position: relative; 
+    top: 0;
+    width: 31%;
+    margin: .5rem;
+    transition: top 0.5s ease;
+  }
+  
+  #gallery figure:hover {
+    top: -7px;
+    box-shadow: 3px 5px 8px #888888, 0px 5px 6px #888888, -3px 5px 8px #888888;
+  }
+  
+  #gallery figure:hover > img {
+    opacity: 1;
+    filter: none;
+  }
+  
+  #gallery img {
+    cursor: pointer;
+    // opacity: 0.7;
+    // filter: grayscale(100%);
+    transition: all 0.5s ease;
+  }
+}
+
+.modal {
+  display: none; /* hides entire modal */
+  position: fixed; /* modal stays in place */
+  top: 0; /* determines start positioning of modal's top side */
+  left: 0; /* determines start position of modal's left side */
+  padding-top: 100px; /* where modal box is placed */
+  width: 100%; /* full width of parent */
+  height: 100%; /* full height of parent */
+  background-color: rgb(0,0,0); /* fallback color */
+  background-color: rgba(0,0,0,0.9); /* black with opacity */
+  overflow: auto; /* can scroll if necessary */
+  z-index: 1; /* modal sits on top of site */
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  border-radius: 20px;
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: white;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.close {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  padding: 0.25em 0.5em;
+  color: #fefefe;
+  font-size: 2em;
+  font-weight: bold;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.close:hover {
+  background-color: #f3f3f3;
+  color: #000;
+  cursor: pointer;
+}
