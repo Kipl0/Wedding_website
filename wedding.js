@@ -1,38 +1,28 @@
-var imgAll = document.querySelectorAll('.image-snip');
-var imgSnip_Src = [];
-for (var i = 0; i < imgAll.length; i++) {
-  imgSnip_Src.push(imgAll[i].src);
-}
+let gallery = document.getElementById("gallery")
+let popup = document.getElementById("popup")
+let selected = document.getElementById("selected_image")
 
-// imgFull_Src contains the src values of the full sized images hosted on Cloudinary.
-var imgFull_Src = ['https://res.cloudinary.com/dtpoqyoum/image/upload/v1558667357/tribute-hr-giger/images/artwork/giger-work-alien-front.jpg', 'https://res.cloudinary.com/dtpoqyoum/image/upload/v1558667355/tribute-hr-giger/images/artwork/giger-work-structure.jpg', 'https://res.cloudinary.com/dtpoqyoum/image/upload/v1558667356/tribute-hr-giger/images/artwork/brain-salad-surgery-album-art-1973.jpg', 'https://res.cloudinary.com/dtpoqyoum/image/upload/v1558667355/tribute-hr-giger/images/artwork/mirror-image.jpg', 'https://res.cloudinary.com/dtpoqyoum/image/upload/v1558667355/tribute-hr-giger/images/artwork/the-tourist-iv-1982.jpg', 'https://res.cloudinary.com/dtpoqyoum/image/upload/v1558667355/tribute-hr-giger/images/artwork/landscape-xviii.jpg', 'https://res.cloudinary.com/dtpoqyoum/image/upload/v1558667356/tribute-hr-giger/images/artwork/li-ii-1974.jpg', 'https://res.cloudinary.com/dtpoqyoum/image/upload/v1558667356/tribute-hr-giger/images/artwork/xenomorph-necronom-iv-1976.jpg', 'https://res.cloudinary.com/dtpoqyoum/image/upload/v1558667357/tribute-hr-giger/images/artwork/giger-work-concept-ship.jpg'];
+let image_indexes = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+let selected_index = null
 
-var imgSnip_Num = [];
-for (var i = 0; i < imgAll.length; i++) {
-  imgSnip_Num.push(imgAll[i].id)
-}
+image_indexes.forEach((i) => {
+    let image = document.createElement("img")
+    image.src = `/img/wedding/wedding-${i}.JPG`
+    image.alt = `cover for Episode {i}`
+    image.classList.add('gallery_img')
 
-var modal = document.getElementById('myModal');
-var modalImg = document.getElementById('full-img');
-var captionText = document.getElementById('caption');
+    image.addEventListener('click', () => {
+        popup.style.transform = `translateY(0)`
+        selected.src = `/img/wedding/wedding-${i}.JPG`
+        selected.alt = `cover for Episode {i}`
 
-const showModal = (event) => {
-  const clickedImage = event.target;
-  for (let i = 0; i < imgSnip_Num.length; i++) {
-    if (clickedImage.id === imgSnip_Num[i]) {
-      modal.style.display = 'block';
-      modal.style.transform = 'scale(1)';
-      modalImg.src = imgFull_Src[i];
-    }
-  }
-}
+    })
 
-const closeModalButton = document.getElementsByClassName('close')[0];
+    gallery.appendChild(image)
+}) 
 
-closeModalButton.onclick = function() {
-  modal.style.display = 'none';
-}
-
-imgAll.forEach(function(x) {
-  x.addEventListener('click', showModal);
-});
+popup.addEventListener('click', () => {
+    popup.style.transform = `translateY(-100%)`
+    popup.src = ''
+    popup.alt = ''
+})
