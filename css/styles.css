@@ -515,9 +515,11 @@ Pink under masthead (practical and wishlist)
   width: 100%;
   background-color: #AACDD3;
   background-color: #f0e7e7;
-  -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2509803922);
-          box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2509803922);
+  -webkit-box-shadow: 5px 15px 15px rgba(0, 0, 0, 0.1254901961);
+          box-shadow: 5px 15px 15px rgba(0, 0, 0, 0.1254901961);
   position: relative;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; /* default colors + transition */
 }
 .wish_list_subject_finder_container .wish_list_subject_finder {
   height: 50px;
@@ -534,6 +536,8 @@ Pink under masthead (practical and wishlist)
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .wish_list_subject_finder_container .wish_list_subject_finder:hover {
   background-color: #dbcaca;
