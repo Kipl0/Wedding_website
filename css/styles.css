@@ -513,8 +513,7 @@ Pink under masthead (practical and wishlist)
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  background-color: #AACDD3;
-  background-color: #f0e7e7;
+  background-color: #dbcaca;
   -webkit-box-shadow: 5px 15px 15px rgba(0, 0, 0, 0.1254901961);
           box-shadow: 5px 15px 15px rgba(0, 0, 0, 0.1254901961);
   position: relative;
@@ -540,7 +539,7 @@ Pink under masthead (practical and wishlist)
   transition: 0.3s;
 }
 .wish_list_subject_finder_container .wish_list_subject_finder:hover {
-  background-color: #dbcaca;
+  background-color: #cfacac;
   cursor: pointer;
 }
 .wish_list_subject_finder_container .wish_list_subject_finder a {
@@ -558,6 +557,10 @@ Pink under masthead (practical and wishlist)
   text-decoration: none;
   color: #4b3b37;
   font-size: 18px;
+}
+
+.wishlist_pink_bg {
+  background-color: #f0e7e7;
 }
 
 /* scrolling state */

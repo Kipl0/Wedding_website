@@ -7,8 +7,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    background-color: #AACDD3; //blue
-    background-color: #f0e7e7; //new rosa
+    background-color: #dbcaca; //new rosa
     box-shadow: 5px 15px 15px #00000020;
     position: relative;
     transition: all 0.3s ease-out;    /* default colors + transition */
@@ -21,7 +20,7 @@
         align-items: center;
         transition: .3s;
         &:hover {
-            background-color: #dbcaca; //blue*
+            background-color: #cfacac; //blue*
             cursor: pointer;
         }
         a {
@@ -35,6 +34,10 @@
             font-size: 18px;
         }
     }
+}
+
+.wishlist_pink_bg {
+    background-color: #f0e7e7;
 }
 
 /* scrolling state */
