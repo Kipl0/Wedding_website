@@ -19,7 +19,7 @@
 }
 .wedding_timeline h3 {
   margin-bottom: 20px;
-  font-family: Ephesis, Helvetica, sans-serif;
+  font-family: "Parisienne", Helvetica, sans-serif;
   font-size: 40px;
   font-weight: 400;
 }
@@ -59,7 +59,7 @@ Pink under masthead (practical and wishlist)
   margin: 30px 0;
 }
 .wish_list_header h3 {
-  font-family: Ephesis, Helvetica, sans-serif;
+  font-family: "Parisienne", Helvetica, sans-serif;
   font-size: 40px;
 }
 
@@ -82,7 +82,7 @@ Pink under masthead (practical and wishlist)
 }
 .center_content_container h3 {
   margin: 0 0 20px 0;
-  font-family: Ephesis, Helvetica, sans-serif;
+  font-family: "Parisienne", Helvetica, sans-serif;
   color: #4b3b37;
   font-size: 40px;
   font-weight: 400;
@@ -171,7 +171,7 @@ Pink under masthead (practical and wishlist)
   width: 80%;
 }
 .dress_code_container div h2 {
-  font-family: Ephesis, Helvetica, sans-serif;
+  font-family: "Parisienne", Helvetica, sans-serif;
   font-size: 40px;
 }
 
@@ -274,11 +274,11 @@ Pink under masthead (practical and wishlist)
   font-size: 22px;
 }
 .frontpage_masthead .frontpage_masthead_header h1 {
-  font-family: Ephesis, Helvetica, sans-serif;
+  font-family: "Parisienne", Helvetica, sans-serif;
   font-weight: 400;
 }
 .frontpage_masthead .frontpage_masthead_header p {
-  font-family: Ephesis, Helvetica, sans-serif;
+  font-family: "Parisienne", Helvetica, sans-serif;
 }
 
 .practical_masthead_picture {
@@ -582,7 +582,7 @@ Pink under masthead (practical and wishlist)
 .wish_list_container .wish_list_subject_header {
   text-align: center;
   font-size: 45px;
-  font-family: Ephesis, Helvetica, sans-serif;
+  font-family: "Parisienne", Helvetica, sans-serif;
   height: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -903,5 +903,5 @@ footer {
   height: 150px;
   color: #4b3b37;
   font-size: 30px;
-  font-family: Ephesis, Helvetica, sans-serif;
+  font-family: "Parisienne", Helvetica, sans-serif;
 }
