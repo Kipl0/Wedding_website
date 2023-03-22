@@ -612,7 +612,7 @@ Pink under masthead (practical and wishlist)
       flex-wrap: wrap;
 }
 .wish_list_container .wish_list_subject_container .card {
-  width: 30%;
+  width: 18%;
   padding: 20px;
   min-width: 135px;
   max-width: 190px;
