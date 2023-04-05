@@ -688,6 +688,17 @@ Pink under masthead (practical and wishlist)
   text-decoration: none;
   color: #000;
   font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (min-width: 950px) {
